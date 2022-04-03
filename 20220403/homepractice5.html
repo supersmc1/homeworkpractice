@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link hrel="h1 { font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif"; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } h3 { font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif"; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif"; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif"; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif"; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }"/>
+  <style>
+    *{margin:0; padding:0;}
+    .table{
+      width: 100vw;
+      height: 100vh;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items:center;
+    }
+
+    .con{
+      width: 95vw;
+      height: 95vh;
+      background-color:black;
+      border: 1px solid grey;
+    }
+    .con>div:nth-child(1){
+      width: 95vw;
+      height: 10vh;
+    }
+    .con>div:nth-child(1)>span{
+      position: relative;
+    }
+    .con>div:nth-child(1)>span::after {
+      content: '';
+      width: 10px;
+      height: 10px;
+      border-top: 5px solid white;
+      border-right: 5px solid white; 
+      display: inline-block;
+      transform: rotate(225deg);
+      position: absolute;
+      top: 50px; 
+      left: 50px;
+    }
+
+
+
+    .con>div:nth-child(2){
+      font-family: Impact,Haettenschweiler,Franklin Gothic Bold,Charcoal,Helvetica Inserat,Bitstream Vera Sans Bold,Arial Black,sans serif;
+      color: white; 
+      width: 95vw;
+      height: 60vh;
+      font-size: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .narrowLineHeight{
+      line-height: 0.8;
+    }
+    
+    .con>div:nth-child(3){
+      width: 95vw;
+      height: 25vh;
+      background-color:black;
+      display: flex;
+      justify-content: center;
+
+    }
+    .con>div:nth-child(3)>div{
+      width: 85vw;
+      height: 10vh;
+      background-color: grey;
+      border: 1px solid black;
+      border-radius: 60px 60px 60px 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+    
+
+
+
+
+  </style>
+</head>
+<body>
+  <div class="table">
+    <div class="con">
+      <div><span></span></div>
+      <div><h1 class="narrowLineHeight">this is<br>just<br>exam<br>but<br>make<br>my own</h1></div>
+      <div>
+        <div>view more</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
